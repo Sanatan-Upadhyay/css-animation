@@ -1,0 +1,80 @@
+
+html{
+	box-sizing: border-box;
+}
+
+*:before, *:after:{
+	box-sizing: border-box;
+}
+
+.container {
+	display:flex;
+	width:100%;
+	height: 600px;
+	justify-content: center;
+	align-items: center;
+	perspective:600px;
+	/*background-color: lightgreen;*/
+}
+
+.body {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	transition: transform 2s;
+	/*border:2px solid red;*/
+	transform-style: preserve-3d;
+}
+
+.card{
+	position: absolute;
+	/*border:2px solid blue;*/
+	width:100%;
+	line-height: 280px;
+	font-size: 2.5em;
+	text-align: center;
+	height: 100%;
+}
+
+
+.one{
+	background-color: red;
+	opacity: 0.6;
+	transform: rotateY(0deg) translateZ(150px);
+}
+.two{
+	background-color: green;
+	opacity: 0.6;
+	transform: rotateY(90deg) translateZ(150px);
+}
+.three{
+	background-color: yellow;
+	opacity: 0.6;
+	transform: rotateY(-90deg) translateZ(150px);
+}
+
+.four{
+	background-color: purple;
+	opacity: 0.6;
+	transform: rotateX(90deg) translateZ(150px);
+}
+.five{
+	background-color: hotpink;
+	opacity: 0.6;
+	transform: rotateX(-90deg) translateZ(150px);
+}
+.six{
+	background-color: blue;
+	opacity: 0.6;
+	transform: rotateY(180deg) translateZ(150px);
+}
+
+.body:hover{
+	transform:rotateY(90deg);
+}
+
+.txt{
+	opacity: 1;
+}
+
+
